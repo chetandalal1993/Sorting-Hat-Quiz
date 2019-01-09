@@ -42,7 +42,7 @@ const Questions = [
         ]
     },
     {
-        question: "How exciting! The first Quidditch match of the year is about to begin and you've made the team you first year. Which Quidditch position are you playing?",
+        question: "How exciting! The first Quidditch match of the year is about to begin and you've made the team your first year. Which Quidditch position are you playing?",
         answers: [
             {
                 type: "Hufflepuff",
