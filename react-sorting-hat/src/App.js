@@ -48,6 +48,37 @@ class App extends Component {
     return array;
   };
 
+  setUserAnswer = (answer) => {
+    this.setState((state) => ({
+      answersCount: {
+        ...state.answersCount,
+        [answer]: state.answersCount[answer] + 1
+      },
+      answer: answer
+    }));
+  }
+
+  setNextQuestion = () => {
+    const counter = this.state.counter + 1;
+    const questionId = this.state.questionId + 1;
+    this.setState({
+      counter: counter,
+      questionId: questionId,
+      question: Questions[counter].question,
+      answerOptions: Questions[counter].answers,
+      answer: ''
+    });
+  }
+
+  handleAnswerSelected = (e) => {
+    this.setUserAnswer(e.currentTarget.value);
+    if (this.state.questionId < Questions.length) {
+        setTimeout(() => this.setNextQuestion(), 500);
+      } else {
+        setTimeout(() => this.setResults(this.getResults()), 500);
+      }
+  }
+
   render() {
     return (
       <div className="App">
