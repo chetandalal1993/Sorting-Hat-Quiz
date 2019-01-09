@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Question from './components/Question';
+import Quiz from './components/Quiz';
+import Questions from './api/Questions'
 
 import './App.css';
 
@@ -24,6 +25,29 @@ class App extends Component {
     };
   }
 
+  componentWillMount = () => {
+    const shuffledAnswerOptions = Questions.map((question) => this.shuffleArray(question.answers));  
+
+    this.setState({
+      question: Questions[0].question,
+      answerOptions: shuffledAnswerOptions[0]
+    });
+  }
+
+  shuffleArray = (array) => {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  };
+
   render() {
     return (
       <div className="App">
@@ -45,7 +69,14 @@ class App extends Component {
         </div>
 
         <div className="App-section App-quiz">
-          <Question content="Wand Core" />
+          <Quiz
+            answer={this.state.answer}
+            answerOptions={this.state.answerOptions}
+            questionId={this.state.questionId}
+            question={this.state.question}
+            questionTotal={Questions.length}
+            onAnswerSelected={this.handleAnswerSelected}
+          />
         </div>
 
       </div>
