@@ -36,7 +36,11 @@ p {
   font-weight: bold;
 }
 
-.App-intro {
+.sm-qt{
+  font-size: 1.0rem;
+}
+
+.App-section {
   background-color: #FFCE47;
   padding: 20px 10%;
 }
@@ -51,4 +55,8 @@ p {
 
 .App-btn:hover {
   cursor: pointer;
+}
+
+.hide {
+  display: none;
 }

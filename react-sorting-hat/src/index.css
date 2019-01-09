@@ -4,6 +4,7 @@ body {
   font-family: 'New Rocker', cursive;
   font-size: 62.5%;
   background-color: #222;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5 {
