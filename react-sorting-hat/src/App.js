@@ -93,7 +93,7 @@ class App extends Component {
     if (result.length === 1) { // if only one max value in array 
       this.setState({ result: result[0] }); // returns only item (ex. H)
     } else { // if more than one max value like a tie (ex. [H, G, S])
-      this.setState({ result: result[getRandomInt(result.length)]}); // returns result at random index (ex. length=3 => random index expected 0, 1, or 2)
+      this.setState({ result: result[Math.floor(Math.random() * result.length)]}); // returns result at random index (ex. length=3 => random index expected 0, 1, or 2)
     }
   }
 
