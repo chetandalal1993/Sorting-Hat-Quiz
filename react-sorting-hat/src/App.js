@@ -133,9 +133,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img className="hide-toggle App-logo" src={require("./designFiles/hogwarts-crest.png")} alt="Hogwarts Crest" />
-          <h1>Welcome to Hogwarts</h1>
-          <h2>- School of Witchcraft and Wizardry -</h2>
+          <img className="App-logo" src={require("./designFiles/hogwarts-crest.png")} alt="Hogwarts Crest" />
+          <div>
+            <h1>Welcome to Hogwarts</h1>
+            <h2>School of Witchcraft and Wizardry</h2>
+          </div>
+          <img className="App-logo" src={require("./designFiles/hogwarts-crest.png")} alt="Hogwarts Crest" />
         </header>
 
         <div className="hide-toggle App-section">

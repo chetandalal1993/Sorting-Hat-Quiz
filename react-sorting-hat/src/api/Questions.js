@@ -121,15 +121,15 @@ const Questions = [
         answers: [
             {
                 type: "Hufflepuff",
-                content: "Protego"
+                content: "Protego!"
             },
             {
                 type: "Gryffindor",
-                content: "Stupefy"
+                content: "Stupefy!"
             },
             {
                 type: "Ravenclaw",
-                content: "Expelliarmus"
+                content: "Expelliarmus!"
             },
             {
                 type: "Slytherin",

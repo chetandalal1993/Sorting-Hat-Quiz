@@ -16,18 +16,18 @@ const Quiz = (props) => {
     }
 
     return (
-       <div className="quiz">
-        <header className="App-header Question-header">
-            <h1>Question <span>{props.questionId}</span> of <span>{props.questionTotal}</span></h1>
-        </header>
-        <div className="App-section">
-            <img className="App-gif" src={props.imgSrc} alt={props.imgAlt}/>
-            <p>{props.question}</p>
-            <ul className="answerOptions">
-                {props.answerOptions.map(renderAnswerOptions)}
-            </ul>
+        <div className="quiz">
+            <header className="App-header Question-header">
+                <h1>Question <span>{props.questionId}</span> of <span>{props.questionTotal}</span></h1>
+            </header>
+            <div className="App-section">
+                <img className="App-gif" src={props.imgSrc} alt={props.imgAlt}/>
+                <p>{props.question}</p>
+                <ul className="answerOptions">
+                    {props.answerOptions.map(renderAnswerOptions)}
+                </ul>
+            </div>
         </div>
-       </div>
     );
   }
 
