@@ -12,6 +12,8 @@ class App extends Component {
 
     this.state = {
       counter: 0,
+      imgSrc: '',
+      imgAlt: '',
       questionId: 1,
       question: '',
       answerOptions: [],
@@ -30,6 +32,8 @@ class App extends Component {
     const shuffledAnswerOptions = Questions.map((question) => this.shuffleArray(question.answers)); // Setting new random order of possible answer array by calling suffle function
 
     this.setState({
+      imgSrc: Questions[0].imgSrc,
+      imgAlt: Questions[0].imgAlt,
       question: Questions[0].question, // Setting first question -- Displaying first question from Question data array
       answerOptions: shuffledAnswerOptions[0] // Setting first answers -- Displaying first question's posisble answers randomly from Question data array 
     });
@@ -64,6 +68,8 @@ class App extends Component {
     const questionId = this.state.questionId + 1; // Start at 1 (Question 1) and increments by one (id =1)
     this.setState({
       counter: counter, // return new counter (counter = 1)
+      imgSrc: Questions[counter].imgSrc,
+      imgAlt: Questions[counter].imgAlt,
       questionId: questionId, // return new id (id = 2)
       question: Questions[counter].question, // replace last question with next one from Question data array (question = Questions[1].question)
       answerOptions: Questions[counter].answers, // replace last answer options with next one from Question data array
@@ -105,6 +111,8 @@ class App extends Component {
         questionId={this.state.questionId}
         question={this.state.question}
         questionTotal={Questions.length}
+        imgSrc={this.state.imgSrc}
+        imgAlt={this.state.imgAlt}
         onAnswerSelected={this.handleAnswerSelected}
       />
     );
@@ -136,7 +144,7 @@ class App extends Component {
           <div className="App-btn">Be sorted and discover your house!</div>
         </div>
 
-        <div className="App-section App-quiz App-results">
+        <div>
           {this.state.result ? this.renderResult() : this.renderQuiz()}
         </div>
 

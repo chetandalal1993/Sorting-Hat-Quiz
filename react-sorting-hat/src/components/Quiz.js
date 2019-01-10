@@ -23,10 +23,13 @@ const Quiz = (props) => {
             counter={props.questionId}
             total={props.questionTotal}
         />
-        <Question content={props.question} />
+        <div className="App-section">
+            <img className="App-gif" src={props.imgSrc} alt={props.imgAlt}/>
+            <Question content={props.question} />
             <ul className="answerOptions">
                 {props.answerOptions.map(renderAnswerOptions)}
             </ul>
+        </div>
        </div>
     );
   }

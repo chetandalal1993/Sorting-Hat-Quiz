@@ -7,12 +7,16 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, ul, ol, li {
   font-family: 'New Rocker', cursive;
   margin: 0;
 }
 
-p, a, ul, ol, li {
+p, a {
   font-family: 'Charm', cursive;
   margin: 0;
+}
+
+ul, ol, li {
+  list-style: none;
 }

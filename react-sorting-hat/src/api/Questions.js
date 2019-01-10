@@ -1,5 +1,7 @@
 const Questions = [
     {
+        imgSrc: require("../designFiles/wand.gif"),
+        imgAlt: "Wizard getting first wand",
         question: "Before your arrival at Hogwarts you obtained your first wand at Ollivanders. The wand you were destined for has which type of wand core?",
         answers: [
             {
@@ -21,6 +23,8 @@ const Questions = [
         ]
     },
     {
+        imgSrc: require("../designFiles/pet.gif"),
+        imgAlt: "Wizard holding pet toad",
         question: "Congratulations, you have made it to Hogwarts and you brought along your trusted wizarding pet. Which pet did you bring with you?",
         answers: [
             {
@@ -42,6 +46,8 @@ const Questions = [
         ]
     },
     {
+        imgSrc: require("../designFiles/quidditch.gif"),
+        imgAlt: "Quidditch players flying on broomsticks",
         question: "How exciting! The first Quidditch match of the year is about to begin and you've made the team your first year. Which Quidditch position are you playing?",
         answers: [
             {
@@ -63,6 +69,8 @@ const Questions = [
         ]
     },
     {
+        imgSrc: require("../designFiles/class.gif"),
+        imgAlt: "Wizard and Witch in class",
         question: "Brilliant! You're team won the Quiddith match with you're help. Alright now, back to the books and time to study up on your favortie subjects, which are ... ",
         answers: [
             {
@@ -84,6 +92,8 @@ const Questions = [
         ]
     },
     {
+        imgSrc: require("../designFiles/deathly-hallows-2.gif"),
+        imgAlt: "Anatimation of the Deathly Hallows",
         question: "While in your History of Magic class you learned about the 'Tale of the Three Brothers' and the Dealthy Hallows. Which character/Hallow do you wish you could have been/received.",
         answers: [
             {
@@ -105,6 +115,8 @@ const Questions = [
         ]
     },
     {
+        imgSrc: require("../designFiles/spell.gif"),
+        imgAlt: "Witch casking spell",
         question: "Think fast! Someone just casted an unknown spell on you. Which counter spell do you shout in return?",
         answers: [
             {
@@ -126,6 +138,8 @@ const Questions = [
         ]
     },
     {
+        imgSrc: require("../designFiles/sorting-hat.gif"),
+        imgAlt: "Sorting Hat",
         question: "Bonus: The Sorting Hat takes your choice into account. Which Hogwarts house do you wish to be apart of?",
         answers: [
             {
@@ -146,27 +160,6 @@ const Questions = [
             }
         ]
     },
-    {
-        question: "Just out of curiosity, after taking this quiz which Hogwarts house do you think you will be sorted into?",
-        answers: [
-            {
-                type: "Hufflepuff",
-                content: "Hufflepuff"
-            },
-            {
-                type: "Gryffindor",
-                content: "Gryffindor"
-            },
-            {
-                type: "Ravenclaw",
-                content: "Ravenclaw"
-            },
-            {
-                type: "Slytherin",
-                content: "Slytherin"
-            }
-        ]
-    }
   ];
   
   export default Questions;
