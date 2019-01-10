@@ -2,23 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  width: auto;
-  height: 200px;
-}
-
-.App-gif {
-  width: 500px;
-  height: 200px;
-  border-radius: 5px;
-}
-
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: #FFCE47;
-}
-
 h1 {
   font-size: 2.4rem;
 }
@@ -40,6 +23,31 @@ p {
   font-size: 1.0rem;
 }
 
+.hide {
+  display: none;
+}
+
+.App-logo {
+  width: auto;
+  height: 200px;
+}
+
+.App-gif {
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: #FFCE47;
+}
+
+.Question-header {
+  padding-top: 0;
+}
+
 .App-section {
   background-color: #FFCE47;
   padding: 20px 10%;
@@ -51,12 +59,29 @@ p {
   color: #FFCE47;
   padding: 10px 0;
   border-radius: 5px;
-}
-
-.App-btn:hover {
   cursor: pointer;
 }
 
-.hide {
+.answerOptions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.answerOption {
+  font-size: 1.2rem;
+  background-color: #222;
+  color: #FFCE47;
+  margin: 1%;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 48%;
+}
+
+.radioCustomButton {
   display: none;
+}
+
+.radioCustomLabel {
+  cursor: pointer; 
 }

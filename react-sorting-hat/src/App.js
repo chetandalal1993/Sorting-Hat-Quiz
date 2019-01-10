@@ -28,6 +28,11 @@ class App extends Component {
     };
   }
 
+  handleClick = () => {
+    document.querySelectorAll(".hide").forEach( e => e.classList.remove("hide"));
+    document.querySelectorAll(".hide-toggle").forEach( e => e.classList.add("hide"));
+  }
+
   componentWillMount = () => {
     const shuffledAnswerOptions = Questions.map((question) => this.shuffleArray(question.answers)); // Setting new random order of possible answer array by calling suffle function
 
@@ -128,12 +133,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={require("./designFiles/hogwarts-crest.png")} className="App-logo" alt="Hogwarts Crest" />
+          <img className="hide-toggle App-logo" src={require("./designFiles/hogwarts-crest.png")} alt="Hogwarts Crest" />
           <h1>Welcome to Hogwarts</h1>
           <h2>- School of Witchcraft and Wizardry -</h2>
         </header>
 
-        <div className="App-section App-intro">
+        <div className="hide-toggle App-section">
           <img src={require("./designFiles/great-hall.gif")} className="App-gif" alt="Hogwart Great Hall" />
           <p> <span className="lrg-qt">&ldquo; </span>Welcome to Hogwarts. The start-of-term banquet will begin shortly, but before you take your seats in the Great Hall, you will be sorted into your houses. 
               ... The four houses are called Gryffindor, Hufflepuff, Ravenclaw, and Slytherin. 
@@ -141,10 +146,10 @@ class App extends Component {
               ... I hope each of you will be a credit to whichever house becomes yours.<span className="lrg-qt"> &rdquo;</span><br></br>
               <span className="sm-qt">- Harry Potter and the Philosopher's Stone: (Ch. 7) The Sorting Hat -- J.K. Rowling -</span>
           </p>
-          <div className="App-btn">Be sorted and discover your house!</div>
+          <div className="App-btn" onClick={this.handleClick}>Be sorted and discover your house!</div>
         </div>
 
-        <div>
+        <div className="hide">
           {this.state.result ? this.renderResult() : this.renderQuiz()}
         </div>
 

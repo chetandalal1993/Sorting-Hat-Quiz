@@ -6,7 +6,6 @@ const Answer =(props) => {
       <input
         type="radio"
         className="radioCustomButton"
-        name="radioGroup"
         checked={props.answerType === props.answer}
         id={props.answerType}
         value={props.answerType}

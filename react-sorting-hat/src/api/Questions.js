@@ -94,7 +94,7 @@ const Questions = [
     {
         imgSrc: require("../designFiles/deathly-hallows-2.gif"),
         imgAlt: "Anatimation of the Deathly Hallows",
-        question: "While in your History of Magic class you learned about the 'Tale of the Three Brothers' and the Dealthy Hallows. Which character/Hallow do you wish you could have been/received.",
+        question: "While in your History of Magic class you learned about the 'Tale of the Three Brothers' and the Dealthy Hallows. Which character/Hallow do you wish you could have been/received?",
         answers: [
             {
                 type: "Hufflepuff",
@@ -162,4 +162,4 @@ const Questions = [
     },
   ];
   
-  export default Questions;
+export default Questions;

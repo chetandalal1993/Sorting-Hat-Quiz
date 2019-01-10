@@ -1,6 +1,4 @@
 import React from 'react';
-import Question from '../components/Question';
-import QuestionCount from '../components/QuestionCount';
 import Answer from '../components/Answer';
 
 const Quiz = (props) => {
@@ -19,13 +17,12 @@ const Quiz = (props) => {
 
     return (
        <div className="quiz">
-        <QuestionCount
-            counter={props.questionId}
-            total={props.questionTotal}
-        />
+        <header className="App-header Question-header">
+            <h1>Question <span>{props.questionId}</span> of <span>{props.questionTotal}</span></h1>
+        </header>
         <div className="App-section">
             <img className="App-gif" src={props.imgSrc} alt={props.imgAlt}/>
-            <Question content={props.question} />
+            <p>{props.question}</p>
             <ul className="answerOptions">
                 {props.answerOptions.map(renderAnswerOptions)}
             </ul>
