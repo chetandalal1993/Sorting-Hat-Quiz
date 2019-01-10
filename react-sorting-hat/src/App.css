@@ -1,3 +1,5 @@
+/* GENERAL FONTS */
+
 .App {
   text-align: center;
 }
@@ -23,9 +25,13 @@ p {
   font-size: 1.0rem;
 }
 
+/* TOGGLE CLASSES */
+
 .hide {
   display: none;
 }
+
+/* APP SECTIONS*/
 
 .App-logo {
   width: auto;
@@ -57,6 +63,8 @@ p {
   padding: 20px 10%;
 }
 
+/* BUTTONS */
+
 .App-btn {
   font-size: 1.6rem;
   background-color: #222;
@@ -65,6 +73,8 @@ p {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* ANSWERS */
 
 .answerOptions {
   display: flex;
@@ -88,4 +98,85 @@ p {
 
 .radioCustomLabel {
   cursor: pointer; 
+}
+
+/* RESULTS */
+
+.result-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-btn {
+  margin-bottom: 2%;
+  width: 500px;
+}
+
+/* Hufflepuff */
+
+.Hufflepuff .Result-header {
+  background-color: #222;
+  color: #FFCE47;
+}
+
+.Hufflepuff .App-section {
+  background-color: #FFCE47;
+  color: #222;
+}
+
+.Hufflepuff .result-btn {
+  background-color: #222;
+  color: #FFCE47;
+}
+
+/* Gryffindor */
+
+.Gryffindor .Result-header {
+  background-color: #222;
+  color: #CC2024;
+}
+
+.Gryffindor .App-section {
+  background-color: #CC2024;
+  color: #FFCE47;
+}
+
+.Gryffindor .result-btn {
+  background-color: #222;
+  color: #FFCE47;
+}
+
+/* Ravenclaw */
+
+.Ravenclaw .Result-header {
+  background-color: #222;
+  color: #029DDA;
+}
+
+.Ravenclaw .App-section {
+  background-color: #029DDA;
+  color: #694939;
+}
+
+.Ravenclaw .result-btn {
+  background-color: #222;
+  color: #B8916D;
+}
+
+/* Slytherin */
+
+.Slytherin .Result-header {
+  background-color: #222;
+  color: #259746;
+}
+
+.Slytherin .App-section {
+  background-color: #259746;
+  color: #C2C3C3;
+}
+
+.Slytherin .result-btn {
+  background-color: #222;
+  color: #C2C3C3;
 }
