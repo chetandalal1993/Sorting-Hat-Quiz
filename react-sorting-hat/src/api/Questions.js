@@ -2,7 +2,7 @@ const Questions = [
     {
         imgSrc: require("../designFiles/wand.gif"),
         imgAlt: "Wizard getting first wand",
-        question: "Before your arrival at Hogwarts you obtained your first wand at Ollivanders. The wand you were destined for has which type of wand core?",
+        question: "Chetan Before your arrival at Hogwarts you obtained your first wand at Ollivanders. The wand you were destined for has which type of wand core?",
         answers: [
             {
                 type: "Hufflepuff",
